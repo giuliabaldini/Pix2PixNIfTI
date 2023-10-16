@@ -13,8 +13,6 @@ However, the code has been extended with the following:
 * Linear additive upsampling can be used instead of the transpose convolution operation. Select the desidered upsampling with `--upsampling [deconvolution | linear]`.
 * We modify the loss function to consider, additionally to the L1 loss, the MSE loss of the pixels corresponding to the tumor ground truth (if available).
 
-In [Paper To Be Added](www.soontobepublished.com) you can find a description of our approaches and some results.
-
 ## Installation
 The framework is written in python3 and requires some libraries, which can be installed with
 ```
