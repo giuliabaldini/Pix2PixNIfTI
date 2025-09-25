@@ -13,8 +13,6 @@ However, the code has been extended with the following:
 * Linear additive upsampling can be used instead of the transpose convolution operation. Select the desidered upsampling with `--upsampling [deconvolution | linear]`.
 * We modify the loss function to consider, additionally to the L1 loss, the MSE loss of the pixels corresponding to the tumor ground truth (if available).
 
-In [Paper To Be Added](www.soontobepublished.com) you can find a description of our approaches and some results.
-
 ## Installation
 The framework is written in python3 and requires some libraries, which can be installed with
 ```
@@ -150,5 +148,14 @@ nvidia-docker run --rm --mount type=bind,source=/fixed/pix_data,target=/input \
 --mount type=bind,source=/location/pix_output,target=/results test_resnet
 
 echo "Finished ResNet Testing"
-docker rmi test_resnet
 ``` 
+
+## Citation
+
+If you use this repository, please cite this article:
+
+```
+Baldini, G., Schmidt, M., Zäske, C., Caldeira, L.L. (2024). MRI Scan Synthesis Methods Based on Clustering and Pix2Pix. In: Artificial Intelligence in Medicine. AIME 2024. Lecture Notes in Computer Science, vol 14845. Springer, Cham. https://doi.org/10.1007/978-3-031-66535-6_13
+```
+
+The article is also available on [ArXiv](https://arxiv.org/abs/2312.05176).
